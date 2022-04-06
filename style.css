@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+button {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.input {
+  padding: 0;
+  margin: 0;
+}
+
+/* ------------Header-----------*/
+.header_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 5rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(28, 35, 59);
+  color: white;
+  font-size: large;
+  padding: 0 100px;
+}
+.navbar li {
+  padding: 1rem;
+}
+.navbar-toggle {
+  display: none;
+}
+.navbar-links:hover {
+  background-color: gainsboro;
+}
+
+.navbar-links:hover a {
+  color: rgb(28, 35, 59);
+}
+
+/* ------------Banner---------- */
+
+.banner {
+  margin: 15px 0;
+  background: url(images/slide.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 80vh;
+  position: relative;
+}
+
+.banner__text {
+  color: white;
+  font-weight: bold;
+  font-size: 4.5em;
+  position: absolute;
+  top: 52%;
+  left: 17%;
+}
+.banner-search {
+  display: none;
+}
+
+.search_button {
+  background-color: rgb(28, 35, 59);
+  color: white;
+}
+
+.banner__dot {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border: 2px solid rgb(185, 110, 39);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 25px 4px 4px 4px;
+}
+.banner__dots {
+  position: absolute;
+  top: 88%;
+  left: 45%;
+}
+
+/* ----------About---------- */
+
+.about {
+  text-align: center;
+  padding: 40px 10px 40px 10px;
+}
+.about p {
+  font-size: 16px;
+}
+.about__images {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.about__images__container {
+  position: relative;
+  margin: 10px 1px;
+}
+.about__images__container img {
+  width: 300px;
+  height: 300px;
+}
+.about__images__container--text {
+  position: absolute;
+  bottom: 0;
+  background: rgb(19, 25, 44); /* Fallback color */
+  background: rgba(19, 25, 44, 0.8); /* background color with 0.8 opacity */
+  color: #f1f1f1;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
+}
+
+.about_image--odd {
+  line-height: 48px;
+}
+
+/* -----------Footer------------ */
+.footer__top {
+  padding: 20px;
+  background-color: rgb(28, 35, 59);
+  height: 15rem;
+  margin-top: 15px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  grid-auto-flow: column;
+}
+.footer__top--pages {
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+.footer__top--map {
+  grid-column: 2 / 4;
+  grid-row: 1 / 5;
+}
+.footer__top--contact {
+  grid-column: 4 / 5;
+  grid-row: 1 / 5;
+}
+
+.footer__top--pages {
+  padding-top: 30px;
+  font-size: 25px;
+}
+.footer__top--contact {
+  padding-right: 50px;
+}
+.footer__copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 30px;
+  padding-top: 2px;
+}
+
+iframe {
+  border: 3px solid rgb(238, 233, 233);
+  border-radius: 10px;
+  width: 80%;
+  height: 150px;
+}
+.icons img {
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  /* header section */
+
+  .header_top {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 10px 20px;
+    height: 4rem;
+    margin-bottom: 10px;
+  }
+
+  .header_top--logo {
+    grid-column: 1/5;
+  }
+  .header_top--search {
+    grid-column: 5/6;
+  }
+  .navbar-toggle {
+    grid-column: 6/7;
+    text-align: center;
+  }
+  .navbar {
+    margin-top: 10px;
+    background-color: rgb(28, 35, 59);
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-links:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  .active {
+    display: block;
+  }
+
+  /* banner section */
+  .form-search {
+    display: none;
+  }
+
+  .banner {
+    min-height: 30vh;
+  }
+  .banner__dots {
+    top: 80%;
+  }
+  .banner__text {
+    font-size: 20px;
+    left: 22%;
+  }
+  .banner__dot {
+    height: 10px;
+    width: 10px;
+    margin: 25px 1px 1px 1px;
+  }
+  .banner-hide {
+    display: none;
+  }
+  .banner-search {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    backdrop-filter: blur(25px);
+    display: none;
+  }
+  .active1 {
+    display: block;
+  }
+  .about p {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+  .about__images__container img {
+    width: 249px;
+    height: 249px;
+  }
+  .about__images__container--text {
+    width: 249px;
+    height: 50px;
+    font-size: 14px;
+    padding-top: 2px;
+  }
+
+  /* footer section */
+  .footer__top {
+    background-color: rgb(28, 35, 59);
+    height: 15rem;
+    margin-top: 15px;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    align-items: center;
+  }
+  .footer__top--pages {
+    padding: 0;
+    grid-row: 1/2;
+    grid-column: 1/5;
+  }
+  .footer__top--map {
+    grid-row: 2/4;
+    grid-column: 1/5;
+  }
+  .footer__top--contact {
+    grid-row: 4/5;
+    grid-column: 1/5;
+  }
+  .footer__top--page {
+    font-size: medium;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+  .footer__top {
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+/* @media for tab version */
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .banner {
+    min-height: 40vh;
+  }
+  .banner__text {
+    font-size: 3rem;
+  }
+  .about__images__container img {
+    width: 220px;
+    height: 220px;
+  }
+  .about__images__container--text {
+    width: 220px;
+    height: 50px;
+    font-size: 12px;
+    padding-top: 2px;
+  }
+  iframe {
+    height: 120px;
+    margin-top: 10px;
+  }
+  .footer__top {
+    gap: 25px;
+  }
+  .footer__top--contact {
+    padding-right: 20px;
+  }
+  .icons img {
+    margin: 15px 2px;
+  }
+}
