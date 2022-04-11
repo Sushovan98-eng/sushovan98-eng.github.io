@@ -26,7 +26,6 @@ ul {
 .header_top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px 20px;
   height: 5rem;
 }
@@ -217,8 +216,7 @@ iframe {
     position: absolute;
     min-height: 35vh;
     width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+    align-items: normal;
   }
   .navbar ul {
     display: flex;
@@ -226,7 +224,7 @@ iframe {
     justify-content: middle;
   }
   .navbar li {
-    padding: 4%;
+    padding: 5%;
   }
   .navbar-toggle {
     display: block;
