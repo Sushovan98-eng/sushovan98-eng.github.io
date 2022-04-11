@@ -215,9 +215,10 @@ iframe {
     margin-top: 8px 0 10px 0;
     background-color: rgba(46, 76, 102, 255);
     position: absolute;
-    min-height: 30vh;
+    min-height: 35vh;
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
   }
   .navbar ul {
     display: flex;
@@ -248,7 +249,7 @@ iframe {
   }
 
   .banner {
-    min-height: 30vh;
+    min-height: 35vh;
     position: relative;
   }
 
