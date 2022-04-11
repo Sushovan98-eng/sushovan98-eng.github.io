@@ -35,7 +35,7 @@ ul {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  background-color: rgb(28, 35, 59);
+  background-color: rgba(46, 76, 102, 255);
   color: white;
   font-size: large;
   padding: 0 100px;
@@ -70,14 +70,14 @@ ul {
   font-size: 4.5em;
   position: absolute;
   top: 52%;
-  left: 17%;
+  left: 16%;
 }
 .banner-search {
   display: none;
 }
 
 .search_button {
-  background-color: rgb(28, 35, 59);
+  background-color: rgba(45, 75, 99, 255);
   color: white;
 }
 
@@ -139,37 +139,40 @@ ul {
 /* -----------Footer------------ */
 .footer__top {
   padding: 20px;
-  background-color: rgb(28, 35, 59);
+  background-color: rgba(4, 22, 36, 255);
   height: 15rem;
   margin-top: 15px;
   color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 40px;
+  grid-column-gap: 35px;
   grid-auto-flow: column;
 }
 .footer__top--pages {
   grid-column: 1 / 2;
   grid-row: 1 / 5;
+  padding-top: 30px;
+  font-size: 20px;
 }
 .footer__top--map {
   grid-column: 2 / 4;
   grid-row: 1 / 5;
+  font-size: 27px;
 }
 .footer__top--contact {
   grid-column: 4 / 5;
   grid-row: 1 / 5;
+  font-size: 27px;
 }
 
-.footer__top--pages {
-  padding-top: 30px;
-  font-size: 25px;
+.footer__top--page li {
+  margin-bottom: 8px;
 }
 .footer__top--contact {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 .footer__copyright {
-  background-color: black;
+  background-color: rgb(18, 18, 18);
   color: white;
   text-align: center;
   height: 30px;
@@ -180,13 +183,13 @@ iframe {
   border: 3px solid rgb(238, 233, 233);
   border-radius: 10px;
   width: 80%;
-  height: 150px;
+  height: 145px;
 }
 .icons img {
   margin: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 485px) {
   /* header section */
 
   .header_top {
@@ -195,7 +198,7 @@ iframe {
     align-items: center;
     padding: 10px 20px;
     height: 4rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .header_top--logo {
@@ -209,15 +212,20 @@ iframe {
     text-align: center;
   }
   .navbar {
-    margin-top: 10px;
-    background-color: rgb(28, 35, 59);
-    display: none;
-  }
-  .show {
-    display: block;
+    margin-top: 8px 0 10px 0;
+    background-color: rgba(46, 76, 102, 255);
+    position: absolute;
+    min-height: 30vh;
+    width: 100%;
+    text-align: center;
   }
   .navbar ul {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: middle;
+  }
+  .navbar li {
+    padding: 4%;
   }
   .navbar-toggle {
     display: block;
@@ -241,7 +249,13 @@ iframe {
 
   .banner {
     min-height: 30vh;
+    position: relative;
   }
+
+  .banner-hide {
+    z-index: -1;
+  }
+
   .banner__dots {
     top: 80%;
   }
@@ -254,9 +268,7 @@ iframe {
     width: 10px;
     margin: 25px 1px 1px 1px;
   }
-  .banner-hide {
-    display: none;
-  }
+
   .banner-search {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -301,10 +313,12 @@ iframe {
   .footer__top--map {
     grid-row: 2/4;
     grid-column: 1/5;
+    font-size: 21px;
   }
   .footer__top--contact {
     grid-row: 4/5;
     grid-column: 1/5;
+    font-size: 21px;
   }
   .footer__top--page {
     font-size: medium;
@@ -325,9 +339,59 @@ iframe {
 
 /* @media for tab version */
 
-@media screen and (min-width: 600px) and (max-width: 950px) {
+@media screen and (min-width: 486px) and (max-width: 760px) {
+  .navbar ul {
+    padding: 0px 29px;
+  }
+  .banner {
+    min-height: 50vh;
+  }
+  .banner__text {
+    font-size: 2rem;
+  }
+  .banner__dots {
+    top: 85%;
+  }
+  .banner__dot {
+    height: 10px;
+    width: 10px;
+    margin: 25px 1px 1px 1px;
+  }
+  .footer__top {
+    gap: 20px;
+  }
+  .footer__top--page {
+    font-size: 14px;
+  }
+  .footer__top--map {
+    font-size: 20px;
+  }
+  .footer__top--contact {
+    font-size: 20px;
+    padding-right: 20px;
+  }
+  .icons {
+    display: flex;
+  }
+  .icons img {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
   .banner {
     min-height: 40vh;
+    position: relative;
+  }
+  .banner__dots {
+    position: absolute;
+    top: 86%;
+  }
+  .banner__dot {
+    height: 15px;
+    width: 15px;
+    margin: 18px 1px 1px 1px;
   }
   .banner__text {
     font-size: 3rem;
@@ -347,10 +411,14 @@ iframe {
     margin-top: 10px;
   }
   .footer__top {
-    gap: 25px;
+    gap: 10px;
   }
   .footer__top--contact {
     padding-right: 20px;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
   }
   .icons img {
     margin: 15px 2px;
