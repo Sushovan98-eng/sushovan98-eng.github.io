@@ -276,7 +276,7 @@ iframe {
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: center;
-    backdrop-filter: blur(25px);
+    backdrop-filter: blur(30px);
     display: none;
   }
   .active1 {
@@ -299,7 +299,7 @@ iframe {
 
   /* footer section */
   .footer__top {
-    background-color: rgb(28, 35, 59);
+    background-color: rgba(4, 22, 36, 255);
     height: 15rem;
     margin-top: 15px;
     color: white;
