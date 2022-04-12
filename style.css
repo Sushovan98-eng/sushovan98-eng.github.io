@@ -188,7 +188,7 @@ iframe {
   margin: 5px;
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 500px) {
   /* header section */
 
   .header_top {
@@ -224,7 +224,7 @@ iframe {
     justify-content: middle;
   }
   .navbar li {
-    padding: 5%;
+    padding: 13px;
   }
   .navbar-toggle {
     display: block;
@@ -338,7 +338,7 @@ iframe {
 
 /* @media for tab version */
 
-@media screen and (min-width: 486px) and (max-width: 760px) {
+@media screen and (min-width: 501px) and (max-width: 760px) {
   .navbar ul {
     padding: 0px 29px;
   }
