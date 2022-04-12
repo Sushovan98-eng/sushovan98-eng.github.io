@@ -29,6 +29,9 @@ ul {
   padding: 10px 20px;
   height: 5rem;
 }
+.header_top--search {
+  padding-top: 16px;
+}
 .navbar ul {
   display: flex;
   justify-content: space-between;
@@ -205,6 +208,7 @@ iframe {
   }
   .header_top--search {
     grid-column: 5/6;
+    padding-top: 0;
   }
   .navbar-toggle {
     grid-column: 6/7;
@@ -224,7 +228,7 @@ iframe {
     justify-content: middle;
   }
   .navbar li {
-    padding: 13px;
+    padding: 11px 0px;
   }
   .navbar-toggle {
     display: block;
@@ -379,6 +383,9 @@ iframe {
 }
 
 @media screen and (min-width: 761px) and (max-width: 1020px) {
+  .navbar ul {
+    padding: 0px 50px;
+  }
   .banner {
     min-height: 40vh;
     position: relative;
