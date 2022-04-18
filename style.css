@@ -68,11 +68,13 @@ header {
 
 .banner__text {
   color: white;
+  width: max-content;
   font-weight: bold;
   font-size: 4.5em;
   position: absolute;
-  top: 52%;
-  left: 16%;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .banner-search {
   display: none;
@@ -218,7 +220,7 @@ iframe {
     margin-top: 8px 0 10px 0;
     background-color: rgba(46, 76, 102, 255);
     position: absolute;
-    min-height: 35vh;
+    min-height: 30vh;
     width: 100%;
     align-items: normal;
   }
@@ -251,7 +253,7 @@ iframe {
   }
 
   .banner {
-    min-height: 35vh;
+    min-height: 30vh;
     position: relative;
   }
 
@@ -260,11 +262,11 @@ iframe {
   }
 
   .banner__dots {
-    top: 80%;
+    top: 79%;
   }
   .banner__text {
-    font-size: 20px;
-    left: 22%;
+    font-size: 25px;
+    left: 50%;
   }
   .banner__dot {
     height: 10px;
