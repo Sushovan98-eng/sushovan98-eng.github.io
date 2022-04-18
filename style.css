@@ -218,7 +218,6 @@ iframe {
     text-align: center;
   }
   .navbar {
-    margin-top: 8px 0 10px 0;
     background-color: rgba(46, 76, 102, 255);
     position: absolute;
     min-height: 30vh;
@@ -228,7 +227,6 @@ iframe {
   .navbar ul {
     display: flex;
     flex-direction: column;
-    justify-content: middle;
   }
   .navbar li {
     padding: 9px 0px;
