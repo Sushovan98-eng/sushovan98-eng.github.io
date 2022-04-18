@@ -276,7 +276,7 @@ iframe {
     padding-top: 3%;
     padding-bottom: 3%;
     text-align: center;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(27px);
     display: none;
   }
   .active1 {
