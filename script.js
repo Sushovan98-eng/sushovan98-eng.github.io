@@ -8,7 +8,7 @@ toggleButton.addEventListener("click", () => {
   banner.classList.toggle("banner-hide");
 });
 
-//for search section
+// for search section
 const toggleSearch = document.getElementsByClassName("search-btn")[0];
 const searchBar = document.getElementsByClassName("banner-search")[0];
 toggleSearch.addEventListener("click", () => {
