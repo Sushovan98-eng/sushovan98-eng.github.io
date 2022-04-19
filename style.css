@@ -28,19 +28,29 @@ header {
   justify-content: space-between;
   padding: 10px 20px;
   height: 5rem;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header_top--search {
   padding-top: 16px;
+}
+.navbar {
+  background-color: rgba(46, 76, 102, 255);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .navbar ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  background-color: rgba(46, 76, 102, 255);
   color: white;
   font-size: large;
   padding: 0 100px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar li {
   padding: 1rem;
@@ -115,6 +125,9 @@ main p {
   justify-content: space-evenly;
   align-content: space-between;
   flex-wrap: wrap;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 figure {
   position: relative;
@@ -142,9 +155,11 @@ figcaption {
 }
 
 /* -----------Footer------------ */
+.footer__top-content {
+  background-color: rgba(4, 22, 36, 255);
+}
 .footer__top {
   padding: 20px;
-  background-color: rgba(4, 22, 36, 255);
   height: 15rem;
   margin-top: 15px;
   color: white;
@@ -152,6 +167,9 @@ figcaption {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 35px;
   grid-auto-flow: column;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__top--pages {
   grid-column: 1 / 2;
@@ -223,6 +241,8 @@ iframe {
     min-height: 30vh;
     width: 100%;
     align-items: normal;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .navbar ul {
     display: flex;
